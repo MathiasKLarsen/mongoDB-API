@@ -1,0 +1,15 @@
+
+npm init -y
+
+npm i express
+
+npm i --save-dev nodemon
+
+    tilføj til script i package.json under scripts
+
+        "devStart": "nodemon server.js"
+
+npm i mongoose
+
+Mulighed for at modtage data (POST PUT PATCH) som form-data,
+npm i express-form-data
