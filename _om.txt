@@ -13,3 +13,6 @@ npm i mongoose
 
 Mulighed for at modtage data (POST PUT PATCH) som form-data,
 npm i express-form-data
+
+til håntering af billeder/filer
+npm i multer

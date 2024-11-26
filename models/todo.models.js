@@ -10,6 +10,9 @@ const todoSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Beskrivelse - description - er påkrævet']
     },
+    image: {
+        type: String
+    },
     done: {
         type: Boolean,
         default: false

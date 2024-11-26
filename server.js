@@ -7,8 +7,11 @@ const PORT = 5000
 app.use( express.json() )                                   // POST PUT mv. kan modtage JSON
 app.use( express.urlencoded ({ extended: true }))           // POST PUT mv. kan modtage som urlencoded
 
-const formData = require( 'express-form-data' )
-app.use( formData.parse())                                  // POST PUT mv. kan modtage data som form-data
+// const formData = require( 'express-form-data' )
+// app.use( formData.parse())                                  // POST PUT mv. kan modtage data som form-data
+
+// Åbn for public folder
+app.use( express.static( 'public' )) // require efter statisk filer sendes til public mappen
 
 // --------- DB MongoDB og Mongoose (npm i mongoose)
 // ---------------------------------------------------------
